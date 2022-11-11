@@ -26,7 +26,7 @@ let api = axios;
 
 let headers = await getHeaders();
 
-async function getGamesOfTheDay() {
+export async function getGamesOfTheDay() {
     try {
         const response = await api.post(URL, jsonBody, {
             headers: headers
