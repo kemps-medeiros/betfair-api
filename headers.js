@@ -30,5 +30,5 @@ export async function  getHeaders() {
     }
 }
 
-const headers = await getHeaders();
+// const headers = await getHeaders();
 // console.log(headers);
