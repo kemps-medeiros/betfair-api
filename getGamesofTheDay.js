@@ -34,6 +34,8 @@ export async function getGamesOfTheDay() {
         let allGames = response.data;
         let games = await mapAllGames(allGames);
         await saveGamesOfTheDay(games)
+        console.log('Arquivo com jogos do dia gerado...');
+        
     } catch (error) {
         console.log(error);
     }
