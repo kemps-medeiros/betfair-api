@@ -55,6 +55,7 @@ export async function getMarketIdInfos() {
                     marketArray.push({
                         eventId: response.data[i].event.id,
                         marketId: response.data[i].marketId,
+                        marketName: response.data[i].marketName,
                         competition: response.data[i].competition.name,
                         homeTeamId: response.data[i].runners[0].selectionId,
                         homeTeamName: response.data[i].runners[0].runnerName,
