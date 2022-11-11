@@ -25,6 +25,7 @@ export async function login() {
         });
         const token = response.data.token;
         await saveToken(token)
+        console.log('Token Salvo')
     } catch (error) {
         
     }

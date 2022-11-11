@@ -14,8 +14,8 @@ const jsonBody = {
     "filter": {
         "eventTypeIds": [1],
         "marketStartTime": {
-            "from": "2022-11-11T00:00:00Z",
-            "to": "2022-11-11T23:59:00Z"
+            "from": "2022-11-12T00:00:00Z",
+            "to": "2022-11-12T23:59:00Z"
         }
     }
 };

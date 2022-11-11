@@ -49,7 +49,7 @@ export async function getMarketIdInfos() {
             const response = await api.post(URL, jsonBody, {
                 headers: headers
             });
-            
+
             for (let i = 0; i < response.data.length; i++) {
                 if(response.data[i].marketName == "Match Odds") {
                     marketArray.push({
@@ -68,7 +68,7 @@ export async function getMarketIdInfos() {
         }
 
         await saveGamesMarketOfTheDay(marketArray);
-
+        console.log('Arquivo com informações do mercado gerado');
     } catch (error) {
         console.log(error)
     }

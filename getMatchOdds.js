@@ -87,6 +87,8 @@ export async function getMatchOdds() {
         }
 
         await saveMatchOddsOfTheDay(marketWithOdds);
+        console.log('Arquivo com as Odds Gerado...');
+
     } catch (error) {
         console.log(error)
     }
