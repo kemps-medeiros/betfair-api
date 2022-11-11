@@ -49,7 +49,7 @@ export async function getMarketIdInfos() {
             const response = await api.post(URL, jsonBody, {
                 headers: headers
             });
-            // saveGamesMarketOfTheDay(response.data);
+            
             for (let i = 0; i < response.data.length; i++) {
                 if(response.data[i].marketName == "Match Odds") {
                     marketArray.push({
